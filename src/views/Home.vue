@@ -1,9 +1,11 @@
 <template>
     <my-page title="广告" :page="page">
-        <div class="slogan">广告管理平台</div>
-        <div class="re-box" style="width: 250px; height: 160px;" @click="click">
-            <img class="img" src="/static/img/nicetool.png">
-            <div class="tip">广告</div>
+        <div class="common-container container">
+            <div class="slogan">广告管理平台</div>
+            <div class="re-box" style="width: 250px; height: 160px;" @click="click">
+                <img class="img" src="/static/img/nicetool.png">
+                <div class="tip">广告</div>
+            </div>
         </div>
     </my-page>
 </template>
@@ -18,7 +20,7 @@
                         {
                             type: 'icon',
                             icon: 'apps',
-                            href: 'https://app.yunser.com/',
+                            href: 'https://www.yunser.com/',
                             target: '_blank',
                             title: '应用'
                         }

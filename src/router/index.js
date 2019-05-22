@@ -3,7 +3,6 @@ import Router from 'vue-router'
 
 const Home = resolve => require(['@/views/Home'], resolve)
 const Simple = resolve => require(['@/views/Simple'], resolve)
-const About = resolve => require(['@/views/About'], resolve)
 const ArticleDetail = resolve => require(['@/views/ArticleDetail'], resolve)
 const Error404 = resolve => require(['@/views/error/Error404'], resolve)
 
@@ -12,7 +11,6 @@ Vue.use(Router)
 let routes = [
     {
         path: '/',
-        // redirect: '/simple'
         component: Home
     },
     {
@@ -26,10 +24,6 @@ let routes = [
     {
         path: '/articles/:id',
         component: ArticleDetail
-    },
-    {
-        path: '/about',
-        component: About
     },
     {
         path: '*',
